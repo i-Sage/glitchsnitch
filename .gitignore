@@ -1,0 +1,203 @@
+# Build directories
+build/
+build-*/
+cmake-build-*/
+out/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+!*Config.cmake.in
+!*ConfigVersion.cmake.in
+
+# Build artifacts
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+
+# Object files
+*.o
+*.obj
+*.ko
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# CLion specific
+cmake-build-*/
+.idea/
+
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.sln.docstates
+*.opensdf
+*.sdf
+
+# Code::Blocks
+*.layout
+*.cbp
+
+# Dev-C++
+*.dev
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Windows
+*.tmp
+*.log
+*.tlog
+*.lastbuildstate
+*.iobj
+*.ipdb
+*.ilk
+*.exp
+
+# Package files
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.zip
+*.7z
+*.deb
+*.rpm
+
+# Test artifacts
+test_results/
+coverage/
+*.gcov
+*.gcda
+*.gcno
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.orig
+
+# Documentation build
+docs/build/
+docs/_build/
+*.pdf
+*.ps
+*.dvi
+
+# Profiling data
+*.prof
+gmon.out
+perf.data*
+
+# Valgrind
+*.valgrind
+vgcore.*
+
+# Core dumps
+core
+core.*
+
+# Local environment files
+.env
+.env.local
+
+# Package manager files
+conan.lock
+*-conaninfo.txt
+*-conandata.yml
+
+# Clang
+compile_commands.json
+.clangd/
+.cache/
+
+# Static analysis
+cppcheck.xml
+*.sarif
+
+# Test coverage
+*.info
+lcov.info
+
+# Custom build scripts output
+install_manifest.txt
+
+# Specific to this project
+example
+test_template
+more_examples
