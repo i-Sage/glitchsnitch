@@ -408,7 +408,7 @@ include(FetchContent)
 FetchContent_Declare(
     glitchsnitch
     GIT_REPOSITORY https://github.com/i-Sage/glitchsnitch.git
-    GIT_TAG main
+    GIT_TAG master
 )
 
 FetchContent_MakeAvailable(glitchsnitch)
