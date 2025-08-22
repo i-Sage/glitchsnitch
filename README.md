@@ -382,32 +382,7 @@ DEBUG=1 TRACE=1 ./test_suite
 
 ## CMake Integration
 
-GlitchSnitch is designed as a modern CMake header-only library with full installation support.
-
-### Method 1: Using find_package() (After Installation)
-
-First, build and install GlitchSnitch:
-```bash
-git clone https://github.com/yourusername/glitchsnitch.git
-cd glitchsnitch
-mkdir build && cd build
-cmake ..
-make install
-```
-
-Then use it in your project:
-```cmake
-cmake_minimum_required(VERSION 3.12)
-project(YourProject)
-
-# Find and link GlitchSnitch
-find_package(GlitchSnitch REQUIRED)
-
-add_executable(your_tests your_tests.c)
-target_link_libraries(your_tests GlitchSnitch::glitchsnitch)
-```
-
-### Method 2: Using add_subdirectory()
+### Method : Using add_subdirectory()
 
 Add GlitchSnitch as a subdirectory in your project:
 ```cmake
@@ -421,7 +396,7 @@ add_executable(your_tests your_tests.c)
 target_link_libraries(your_tests GlitchSnitch::glitchsnitch)
 ```
 
-### Method 3: Using FetchContent (CMake 3.14+)
+### Method : Using FetchContent (CMake 3.14+)
 
 Automatically download and include GlitchSnitch:
 ```cmake
@@ -441,34 +416,6 @@ FetchContent_MakeAvailable(glitchsnitch)
 add_executable(your_tests your_tests.c)
 target_link_libraries(your_tests GlitchSnitch::glitchsnitch)
 ```
-
-### Building GlitchSnitch
-
-```bash
-# Basic build
-mkdir build && cd build
-cmake ..
-make
-
-# With testing enabled
-cmake -DBUILD_TESTING=ON ..
-make
-ctest
-
-# Install to system
-make install
-
-# Custom install prefix
-cmake -DCMAKE_INSTALL_PREFIX=/usr/local ..
-make install
-```
-
-### CMake Options
-
-| Option | Default | Description |
-|--------|---------|-------------|
-| `BUILD_TESTING` | `OFF` | Enable building and running tests |
-| `CMAKE_INSTALL_PREFIX` | System default | Installation directory |
 
 ### Integration Example
 
